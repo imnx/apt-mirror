@@ -98,9 +98,9 @@ use Fcntl qw(:flock);
 my $config_file;
 
 my %config_variables = (
-    "defaultarch" => `dpkg --print-architecture 2>/dev/null` || 'i386',
+    "defaultarch" => `dpkg --print-architecture 2>/dev/null` || 'armhf',
     "nthreads"    => 20,
-    "base_path"   => '/var/spool/apt-mirror',
+    "base_path"   => '/mnt/sdb/apt-mirror',
     "mirror_path" => '$base_path/mirror',
     "skel_path"   => '$base_path/skel',
     "var_path"    => '$base_path/var',
