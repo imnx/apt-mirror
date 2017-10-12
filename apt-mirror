@@ -132,7 +132,7 @@ my %clean_directory = ();
 ######################################################################################
 ## Setting up $config_file variable
 
-$config_file = "/etc/apt/mirror.list";    # Default value
+$config_file = "mirror.list";    # Default value
 if ( $_ = shift )
 {
     die("apt-mirror: invalid config file specified") unless -e $_;
